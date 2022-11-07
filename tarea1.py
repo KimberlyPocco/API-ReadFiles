@@ -45,7 +45,10 @@ def menu():
     print("Opción 10: Guardar libros en archivo de disco duro (.txt o csv)")  
     print("Opción 11: SALIR")
     print(blanco+"*************************************************************************************************************************")
+
+#Agregar la funcionalidad 
 while True:
+    #Llamar al menu
     menu()
     #Validar opcion del menu
     try:
