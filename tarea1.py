@@ -12,3 +12,12 @@ class Libro:
             if i == '&':
                 self.cantAutores+=1
 
+#crear Destructor de Clase Libro
+    def __del__(self):
+        print("\tLibro eliminado")
+        return None
+
+#Crear el método mostrar libro
+    def mostrarLibro(self):
+        print("{0:3} {1:30} {2:15} {3:15} {4:25} {5}".format(self.id, self.titulo,self.genero,self.ISBN,self.editorial,self.autores), end="")
+
