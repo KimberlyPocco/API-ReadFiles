@@ -13,17 +13,13 @@ class Libro:
                 self.cantAutores+=1
 
 #crear Destructor de Clase Libro
-    def __del__(self):
+    def __del__(self) :
         print("\tLibro eliminado")
         return None
-
-#Crear el método mostrar libro
-    def mostrarLibro(self):
-        print("{0:3} {1:30} {2:15} {3:15} {4:25} {5}".format(self.id, self.titulo,self.genero,self.ISBN,self.editorial,self.autores), end="")
-
-#Crear una variable listaLibro para levantar temporalmente a memoria la lista de objetos
+#CREACION DE UNA LISTA Y UN OBJETO QUE LO CONSERVE EN EL CACHE
 listaLibro :list= []
-#crear variable de formato colores
+
+#CREACION DE UNA PALETA DE COLORES
 amarillo='\033[33m'
 rojo = '\033[31m'
 verde = '\033[32m'
