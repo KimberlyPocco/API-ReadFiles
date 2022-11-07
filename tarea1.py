@@ -16,3 +16,13 @@ class Libro:
     def __del__(self) :
         print("\tLibro eliminado")
         return None
+#CREACION DE UNA LISTA Y UN OBJETO QUE LO CONSERVE EN EL CACHE
+listaLibro :list= []
+#CREACION DE UNA PALETA DE COLORES
+amarillo='\033[33m'
+rojo = '\033[31m'
+verde = '\033[32m'
+morado = '\033[35m'
+celeste = '\033[36m'
+blanco = '\033[37m'
+reset = '\033[39m'
