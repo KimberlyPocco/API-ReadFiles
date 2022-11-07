@@ -39,7 +39,27 @@ def subMenuForma():
     detalleSolicitud : dict =resultado.json()
     resultado= [forma ['name'] for forma in detalleSolicitud['results'] ]
     return resultado
+#LISTAR POR HABILIDAD
+def listarPokemonHabilidad(ability):
+    try:
+        resultado = requests.get(f'https://pokeapi.co/api/v2/ability/{ability}')
+        detalleSolicitud: dict =resultado.json()
+        resultado= {'nombre': [nombre ['pokemon']['name'] for nombre in detalleSolicitud['pokemon']],
+                    'habilidad': [detalleSolicitud['name']],
+                    'url': [url ['pokemon']['url'] for url in detalleSolicitud['pokemon']]}
+        return resultado
+    except :
+        print(rojo+"NO EXISTE EL NOMBRE DE LA HABILIDAD INGRESADA"+reset)
 
+#SUBMENU LISTA HABILIDAD
+def subMenuHabilidad():
+    try:
+        resultado=requests.get(f'https://pokeapi.co/api/v2/ability/')
+        detalleSolicitud =resultado.json()
+        resultado= [forma ['name'] for forma in detalleSolicitud['results'] ]
+        return resultado
+    except:
+        print(rojo+"NO EXISTE LA HABILIDAD INGRESADA"+reset)
 #LISTAR POR HABITAT
 def listarPokemonHabitat(habitat):
     try:
