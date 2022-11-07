@@ -38,10 +38,7 @@ def subMenuForma():
     resultado=requests.get(f'https://pokeapi.co/api/v2/pokemon-shape/')
     detalleSolicitud : dict =resultado.json()
     resultado= [forma ['name'] for forma in detalleSolicitud['results'] ]
-<<<<<<< HEAD
     return resultado
-=======
-
 
 #LISTAR POR HABITAT
 def listarPokemonHabitat(habitat):
@@ -61,4 +58,3 @@ def subMenuHabitad():
     detalleSolicitud : dict =resultado.json()
     resultado= [habitad ['name'] for habitad in detalleSolicitud['results'] ]
     return resultado
->>>>>>> KimberlyPocco
