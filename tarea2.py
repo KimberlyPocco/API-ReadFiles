@@ -58,3 +58,21 @@ def subMenuHabitad():
     detalleSolicitud : dict =resultado.json()
     resultado= [habitad ['name'] for habitad in detalleSolicitud['results'] ]
     return resultado
+#LISTAR POR TIPO
+def listarPokemonPorTipo(tipo):
+    try:
+        resultado= requests.get(f'https://pokeapi.co/api/v2/type/{tipo}')
+        detalleSolicitud: dict =resultado.json()
+        resultado={'nombre' : [tipo ['pokemon']['name'] for tipo in detalleSolicitud['pokemon']],
+                    'habilidad': [],
+                    'url': [url ['pokemon']['url'] for url in detalleSolicitud['pokemon']]}
+        return resultado
+    except:
+        print(rojo+"NO EXISTE EL TIPO INGRESADO"+reset)
+
+#SUBMENU TIPO
+def subMenuTipo():
+    resultado=requests.get(f'https://pokeapi.co/api/v2/type/')
+    detalleSolicitud : dict =resultado.json()
+    resultado= [tipo ['name'] for tipo in detalleSolicitud['results'] ]
+    return resultado
