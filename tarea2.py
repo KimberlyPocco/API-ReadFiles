@@ -40,8 +40,6 @@ def subMenuForma():
     resultado= [forma ['name'] for forma in detalleSolicitud['results'] ]
     return resultado
 
-
-
 #LISTAR POR HABITAT
 def listarPokemonHabitat(habitat):
     try:
