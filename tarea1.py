@@ -46,8 +46,9 @@ def menu():
     print("Opción 11: SALIR")
     print(blanco+"*************************************************************************************************************************")
 
-
+#Agregar la funcionalidad 
 while True:
+    #Llamar al menu
     menu()
     op=int(input(rojo+"INGRESE UNA OPCIÓN DEL MENÚ: "+reset))
     #OPCION 1
