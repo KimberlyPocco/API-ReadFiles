@@ -60,3 +60,8 @@ Requests está listo para las demandas de crear aplicaciones sólidas y confiabl
 
 ##  Referencia de la API y guía del usuario disponibles en [ Leer los documentos ](https://requests.readthedocs.io)
 
+##  Clonar el repositorio
+
+```concha
+git clone https://github.com/KimberlyPocco/Proyecto_Unidad_I.git
+```
