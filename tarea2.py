@@ -39,3 +39,24 @@ def subMenuForma():
     detalleSolicitud : dict =resultado.json()
     resultado= [forma ['name'] for forma in detalleSolicitud['results'] ]
     return resultado
+
+
+
+#LISTAR POR HABITAT
+def listarPokemonHabitat(habitat):
+    try:
+        resultado = requests.get(f'https://pokeapi.co/api/v2/pokemon-habitat/{habitat}')
+        detalleSolicitud: dict =resultado.json()
+        resultado= {'nombre': [ habitad ['name'] for habitad in detalleSolicitud['pokemon_species']],
+                    'habilidad': [],
+                    'url': [url ['url'] for url in detalleSolicitud['pokemon_species']]}
+        return resultado
+    except:
+        print(rojo+"NO EXISTE LA HABITAD INGRESADA"+reset)
+
+#SUBMENU DE HABITAD
+def subMenuHabitad():
+    resultado=requests.get(f'https://pokeapi.co/api/v2/pokemon-habitat/')
+    detalleSolicitud : dict =resultado.json()
+    resultado= [habitad ['name'] for habitad in detalleSolicitud['results'] ]
+    return resultado
