@@ -1,6 +1,7 @@
-## Proyecto_Unidad_I
-Desarrollo del proyecto de la unidad I del curso BackEnd
-# Tarea 1
+# ReadFiles
+
+## Caso Practico 01:
+
 Se tiene la clase Libro con los siguientes atributos: id, título, género, ISBN, editorial y autor(es). Considerar que un libro puede tener varios autores.
 
 Se solicita escribir un programa en Python que permita registrar libros. Debe utilizar: colecciones (listas, tuplas, etc), funciones y clases de Python.
@@ -19,8 +20,8 @@ Dicho programa debe tener un menu (a interactuar en la línea de comando) para:
 * Opción 10: Guardar libros en archivo de disco duro (.txt o csv).
 ### Nota: listar libros involucra: título, género, ISBN, editorial y autor(es)
 
-# Tarea 2
-La tarea gira en torno a la PokeAPI: https://pokeapi.co/docs/v2 utilizar la API v2 y el paquete requests de Python
+## Caso Practico 02:
+Con la PokeAPI: https://pokeapi.co/docs/v2 utilizar la API v2 y el paquete requests de Python
 
 Escribir un programa que tenga las siguientes opciones:
 
